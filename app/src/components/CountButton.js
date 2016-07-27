@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import clickAction from '../actions/clickAction';
 
-export class CountButton extends React.Component{
+class CountButton extends React.Component{
     constructor() {
         super();
     }
@@ -25,7 +25,6 @@ export class CountButton extends React.Component{
     }
 }
 function mapStateToProps(state) {
-    debugger
     return {clickReducer: state.clickReducer};
 }
 
